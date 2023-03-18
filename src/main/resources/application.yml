@@ -7,9 +7,9 @@ spring:
   application:
     name: vm-microservices
   datasource:
-    username: 'admin'
+    username: admin
     url: jdbc:postgresql://localhost:5432/vaccination
-    password: 'admin'
+    password: admin
     jpa:
       generate-ddl: true
       properties:
