@@ -1,0 +1,21 @@
+keycloak:
+  realm: kruger
+  auth-server-url: http://localhost:8180
+  resource: vm-microservices
+
+spring:
+  application:
+    name: vm-microservices
+  datasource:
+    username: 'admin'
+    url: jdbc:postgresql://localhost:5432/vaccination
+    password: 'admin'
+    jpa:
+      generate-ddl: true
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.PostgreSQLDialect
+          format_sql: true
+      hibernate:
+        ddl-auto: update
+      show-sql: true
